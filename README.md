@@ -1,71 +1,80 @@
-# Getting Started with Create React App
+Sure! Here's the entire content formatted exactly as it should appear in a `README.md` file. You can copy and paste this into a file named `README.md` in the root of your project:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+```markdown
+# Expense Tracker
 
-In the project directory, you can run:
+This is a simple React app built for a school code challenge. It lets you keep track of your expenses. You can add new expenses, search through them, sort them, and delete them if needed.
 
-### `npm start`
+I used React components, state, and props to build this. It was good practice for handling forms, events, and filtering data.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Add a new expense with a description, category, and amount  
+- View all added expenses in a table  
+- Filter expenses using a search bar  
+- Sort expenses by description or category  
+- Delete individual expenses  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## How to Run the App
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Follow these steps to run it on your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Clone the repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If this project is on GitHub, you can clone it using:
 
-### `npm run eject`
+```bash
+git clone https://github.com/DedanKIarie/expense-tracker
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Then navigate into the project folder:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd expense-tracker
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Install dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Make sure you have Node.js and npm installed.
 
-## Learn More
+Then run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3. Start the development server
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This will start the app on [http://localhost:3000](http://localhost:3000) or another port, depending on what's available.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Folder Structure
 
-### Making a Progressive Web App
+The project is organized like this:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+src/
+├── components/
+│   ├── ExpenseForm.js      // Form to add new expenses
+│   ├── ExpenseTable.js     // Table displaying all expenses
+│   └── SearchBar.js        // Search bar for filtering
+├── App.js                  // Main component
+└── index.css               // Styles for the app
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Notes
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-yo
+This project does not save data permanently. When you refresh the page, expenses will be lost. This was done intentionally since the focus is on front-end functionality only.

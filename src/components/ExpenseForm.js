@@ -1,20 +1,22 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
 function ExpenseForm({ onAddExpense }) {
-  const [description, setDescription] = useState('');
-  const [amount, setAmount] = useState('');
+  const [description, setDescription] = useState("");
+  const [category, setCategory] = useState("");
+  const [amount, setAmount] = useState("");
 
-  const handleSubmit = (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
     const newExpense = {
-      id: Date.now(),
       description,
+      category,
       amount: parseFloat(amount),
     };
     onAddExpense(newExpense);
-    setDescription('');
-    setAmount('');
-  };
+    setDescription("");
+    setCategory("");
+    setAmount("");
+  }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -23,6 +25,12 @@ function ExpenseForm({ onAddExpense }) {
         placeholder="Description"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
+      />
+      <input
+        type="text"
+        placeholder="Category"
+        value={category}
+        onChange={(e) => setCategory(e.target.value)}
       />
       <input
         type="number"

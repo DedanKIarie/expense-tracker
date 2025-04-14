@@ -1,8 +1,3 @@
-Sure! Here's the entire content formatted exactly as it should appear in a `README.md` file. You can copy and paste this into a file named `README.md` in the root of your project:
-
----
-
-```markdown
 # Expense Tracker
 
 This is a simple React app built for a school code challenge. It lets you keep track of your expenses. You can add new expenses, search through them, sort them, and delete them if needed.
